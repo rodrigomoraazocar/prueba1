@@ -9,7 +9,7 @@ public class Empleado {
 
 	@Id
 	@Column("idEmpleado")
-	private int idEmpleado;
+	private Integer idEmpleado;
 	
 	@Column("nombre")
 	private String nombre;
@@ -23,18 +23,18 @@ public class Empleado {
 	public Empleado() {
 	}
 
-	public Empleado(int idEmpleado, String nombre, String direccion, String email) {
+	public Empleado(Integer idEmpleado, String nombre, String direccion, String email) {
 		this.idEmpleado = idEmpleado;
 		this.nombre = nombre;
 		this.direccion = direccion;
 		this.email = email;
 	}
 
-	public int getIdEmpleado() {
+	public Integer getIdEmpleado() {
 		return idEmpleado;
 	}
 
-	public void setIdEmpleado(int idEmpleado) {
+	public void setIdEmpleado(Integer idEmpleado) {
 		this.idEmpleado = idEmpleado;
 	}
 
