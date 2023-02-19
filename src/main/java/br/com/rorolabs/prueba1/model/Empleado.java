@@ -4,20 +4,20 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Column;
 import org.springframework.data.relational.core.mapping.Table;
 
-@Table("EMPLEADO")
+@Table("EMPLEADO") //indica como se llama la tabla
 public class Empleado {
 
-	@Id
-	@Column("idEmpleado")
+	@Id // indica la llave primaria de la tabla
+	@Column("idEmpleado") //asi se llama la columna de la base datos
 	private Integer idEmpleado;
 	
-	@Column("nombre")
+	@Column("nombre") //asi se llama la columna de la base datos
 	private String nombre;
 
-	@Column("direccion")
+	@Column("direccion") //asi se llama la columna de la base datos
 	private String direccion;
 
-	@Column("email")
+	@Column("email") //asi se llama la columna de la base datos
 	private String email;
 
 	public Empleado() {
